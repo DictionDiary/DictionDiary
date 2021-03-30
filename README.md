@@ -77,7 +77,7 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://i.postimg.cc/8kZzDfzN/IMG-0315.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
