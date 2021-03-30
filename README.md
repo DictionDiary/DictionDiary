@@ -52,18 +52,18 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home
+* Profile
+* Previous word list
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
+* Login/ Register
+   * Home
    * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Home
+   * Profile
+   * Previous word list
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
