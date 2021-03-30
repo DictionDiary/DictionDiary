@@ -65,7 +65,7 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 * Login/ Register
    * Home
-   * ...
+   * Previous word list
 * Home
    * Profile
    * Previous word list
