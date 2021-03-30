@@ -11,11 +11,11 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+A mobile application to allow users to learn new words and expand their vocabulary
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
+- **Category:** 
 - **Mobile:**
 - **Story:**
 - **Market:**
@@ -42,10 +42,10 @@ Original App Design Project - README Template
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
+* Login / Register - User signs up or logs into their account
    * [list associated required story here]
    * ...
-* [list second screen here]
+* Detail - User can view the specifics of a particular resource
    * [list associated required story here]
    * ...
 
