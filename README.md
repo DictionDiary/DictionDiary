@@ -49,6 +49,8 @@ A mobile application to allow users to learn new words and expand their vocabula
    * User can input that they used the word and get points
 * Profile
    * User can view how many points they have earned
+* Previous word list
+   * User can view the words that they learned in the past, how they used them, and the date
    
 
 ### 3. Navigation
