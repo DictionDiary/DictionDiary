@@ -42,11 +42,14 @@ A mobile application to allow users to learn new words and expand their vocabula
 ### 2. Screen Archetypes
 
 * Login / Register - User signs up or logs into their account
-   * [list associated required story here]
-   * ...
-* Detail - User can view the specifics of a particular resource
-   * [list associated required story here]
-   * ...
+   * User goes to home page
+   * User can see the word of the day
+   * User can now view their profile 
+   * User can now view previous words learned
+   * User can input that they used the word and get points
+* Profile
+   * User can view how many points they have earned
+   
 
 ### 3. Navigation
 
@@ -64,6 +67,11 @@ A mobile application to allow users to learn new words and expand their vocabula
 * Home
    * Profile
    * Previous word list
+ 
+* Profile
+   * Home
+   * Previous word list
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
