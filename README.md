@@ -30,15 +30,14 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 * User can log in, sign up, and log out
 * User can view WoD and definition
-* User can see list of previous words
 * User can show that they’ve used the word and gain points
 * User can see total number of points they’ve earned
 
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can see list of previous words
+
 
 ### 2. Screen Archetypes
 
