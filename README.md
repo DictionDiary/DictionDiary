@@ -86,7 +86,32 @@ A mobile application to allow users to learn new words and expand their vocabula
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Users
+| Property   | Type   |  Description |
+|---|---|---|
+| userId  | id   | user's ID  |
+| name  | string  | user's name  |
+| username  |  id | user's username  |
+| points   | number   | total points accumulated  |
+| profilePicture  |  file  |  user's profile picture  |
+| didLogin  | boolean  | checks if user logged in for the day, user gets one point for daily login |
+
+#### PreviousWords
+| Property   | Type   |  Description |
+|---|---|---|
+| wordId  | id   | daily word ID  |
+| dailyWord  | string  | dailyWord  |
+| definition  |  string | word definition |
+| dateCreated   | DateTime   | date the word was chosen  |
+
+#### UsedWords
+| Property   | Type   |  Description |
+|---|---|---|
+| wordId  | id   | daily word ID  |
+| userId  | id  | user's id   |
+| sentenceContext  |  string | sentence in which the word was used |
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
