@@ -114,9 +114,9 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 ### Networking
 - 
-Login/Register
-  PUT - Create a User
-  GET - Sign in already created user 
+* Login/Register
+  * PUT - Create a User
+  * GET - Sign in already created user 
 Home 
   GET - Word of the Day 
   POST - Word Usage
