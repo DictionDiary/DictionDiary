@@ -128,4 +128,79 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 
 - [Create basic snippets for each Parse network request]
+* Login GET Request
+   ```
+   PFUser.logInWithUsername(inBackground: username, password: password) {
+            (user, error) in
+            if (user != nil) {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else {
+                print("oh no! \(String(describing: error?.localizedDescription))")
+            }
+        }
+      ```
+* Register POST request
+   ```
+   user.signUpInBackground{(success,error) in
+            if (success) {
+                                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                                }
+            else {
+                print("oh no! \(String(describing: error?.localizedDescription))")
+            }
+        }
+    ```
+* Previous Words GET Request
+  ```
+   let pastWordsQuery = PFQuery(className: "PreviousWords")
+        pastWordsQuery.includeKey("id")
+        pastWordsQuery.limit = 20
+        pastWordsQuery.findObjectsInBackground { (pastWords,error) in
+            if posts != nil {
+                print("hooray!")
+                self.pastWordsArray = pastWords!
+                self.myRefreshControl.endRefreshing()
+
+                self.tableView.reloadData()
+            }
+            else {
+                print("empty...")
+            }
+        }
+   ```
+* Word Usage POST Request
+  ```
+   let usedWord = PFObject(className: "UsedWords")
+        usedWord["wordId"] = wordId
+        usedWord["user"] = PFUser.current()!
+        
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        usedWord["image"] = file
+        
+        post.saveInBackground {(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            }
+            else {
+                print("oh no!!")
+            }
+        }
+  ```
+  * Profile GET Request
+    ```
+      currentUser = PFUser.current()!
+      profileUsername.text = currentUser["username"] as? String
+      
+      let imageFile = currentUser["profilePicture"] as! PFFileObject
+      let imageUrl = imageFile.url!
+      let url = URL(string: imageUrl)!
+      profilePicture.af.setImage(withURL: url)
+      profileName.text = currentUser["name"] as? String
+      profilePoints.text = currentUser["points"] as? String
+
+
+    ```
+        
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
