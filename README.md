@@ -114,17 +114,17 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 ### Networking
 
-* Login/Register 1
+* Login/Register 
   * PUT - Create a User
   * GET - Sign in already created user 
 * Home 
   * GET - Word of the Day 
-  * POST - Word Usage 1
+  * POST - Word Usage 
 * Previous Word List
-  * GET - Previous Word List  1
+  * GET - Previous Word List  
   * POST - Word of the Day 
 * Profile
-  * GET - User  1
+  * GET - User 
 
 
 * Login GET Request
@@ -216,6 +216,15 @@ A mobile application to allow users to learn new words and expand their vocabula
             }
         }
   ```
+  
+  * Word of the day GET Request
+    ```
+    let request = NSMutableURLRequest(url: NSURL(string: "https://wordsapiv1.p.rapidapi.com/words/?random=true")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+     request.httpMethod = "GET"
+     request.allHTTPHeaderFields = headers
+    ```
         
 #### Words API Endpoint
 | HTTP Verb   | Enpoint   |  Description |
