@@ -217,15 +217,7 @@ A mobile application to allow users to learn new words and expand their vocabula
         }
   ```
         
-* Oxford Dictionary API Endpoint
-
-```
-static let base = "https://od-api.oxforddictionaries.com/api/v1"
-
-		/// `entries` endpoint.
-		struct entries {
-			static let base = "entries"
-			static let method = "GET"
-			static let url = API.base + "/" + entries.base
-		}
-  ```
+#### Words API Endpoint
+| HTTP Verb   | Enpoint   |  Description |
+|---|---|---|
+| GET  | /random   | gets random word, definition, and part of speech  |
