@@ -108,26 +108,25 @@ A mobile application to allow users to learn new words and expand their vocabula
 | Property   | Type   |  Description |
 |---|---|---|
 | wordId  | id   | daily word ID  |
-| userId  | id  | user's id   |
+| user  | PFUser  | user  |
 | sentenceContext  |  string | sentence in which the word was used |
 
 
 ### Networking
 
-* Login/Register
+* Login/Register 1
   * PUT - Create a User
   * GET - Sign in already created user 
 * Home 
   * GET - Word of the Day 
-  * POST - Word Usage
+  * POST - Word Usage 1
 * Previous Word List
-  * GET - Previous Word List 
+  * GET - Previous Word List  1
   * POST - Word of the Day 
 * Profile
-  * GET - User 
+  * GET - User  1
 
 
-- [Create basic snippets for each Parse network request]
 * Login GET Request
    ```
    PFUser.logInWithUsername(inBackground: username, password: password) {
@@ -174,10 +173,7 @@ A mobile application to allow users to learn new words and expand their vocabula
    let usedWord = PFObject(className: "UsedWords")
         usedWord["wordId"] = wordId
         usedWord["user"] = PFUser.current()!
-        
-        let imageData = imageView.image!.pngData()
-        let file = PFFileObject(name: "image.png", data: imageData!)
-        usedWord["image"] = file
+        usedWord["sentenceContext"] = setnece.text as? String
         
         post.saveInBackground {(success, error) in
             if success {
@@ -202,5 +198,34 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 
     ```
+* Previous Words POST Request
+  ```
+   let previousWord = PFObject(className: "PreviousWords")
+        PreviousWords["word"] = wod
+        PreviousWords["wordId"] = wodId
+        PreviousWords["definition"] = definition
+        PreviousWords["dateCreated"] = Date.Now()
         
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+        
+        previousWord.saveInBackground {(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            }
+            else {
+                print("oh no!!")
+            }
+        }
+  ```
+        
+* Oxford Dictionary API Endpoint
+
+```
+static let base = "https://od-api.oxforddictionaries.com/api/v1"
+
+		/// `entries` endpoint.
+		struct entries {
+			static let base = "entries"
+			static let method = "GET"
+			static let url = API.base + "/" + entries.base
+		}
+  ```
