@@ -4,4 +4,10 @@
    <FileRef
       location = "container:DictionDiary.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:DictionDiary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
