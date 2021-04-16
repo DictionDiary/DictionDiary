@@ -1,18 +1,17 @@
-//
-//  AppDelegate.swift
-//  DictionDiary
-//
-//  Created by Mikayla Orange on 4/8/21.
-//
-
 import UIKit
-
+import Parse
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "N9RusgwJRmsTKtVap4E1toWRaV5bbCbLxcE9X3Jt"
+                    $0.clientKey = "sgwpCSjo4PAXLiLhAsMtUoqu8e6zlyD04FdOEIZL"
+                    $0.server = "https://parseapi.back4app.com"
+            }
+            Parse.initialize(with: parseConfig)
         // Override point for customization after application launch.
         return true
     }
