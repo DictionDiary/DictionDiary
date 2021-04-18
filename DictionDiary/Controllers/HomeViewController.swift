@@ -9,8 +9,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let todaysDate = Date()
+        let formatter = DateFormatter()
+        formatter.timeStyle = .none
+        formatter.dateStyle = .long
+        dateLabel.text = formatter.string(from: todaysDate)
 
         // Do any additional setup after loading the view.
     }
