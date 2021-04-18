@@ -1,6 +1,9 @@
 import Foundation
 import Parse
 struct WordsAPICaller {
+    /**
+     	Recursive Function to get Random word. This function makes a HTTP Request to the Words API, and adds to the database if the request succeeds and the body contains a word, defintion, and part of speech. Otherwise, the function is called again.
+     */
     static func getRandomWordRequest() {
     let headers = [
         "x-rapidapi-key": "738d71b373msh2c84965784c4bdbp15c52fjsnb20b5fcd8f5d",

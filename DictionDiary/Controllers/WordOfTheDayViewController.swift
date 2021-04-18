@@ -24,6 +24,7 @@ class WordOfTheDayViewController: UIViewController {
         view.layer.cornerRadius = 50
         APICaller()
     }
+    /** function that calls the HTTP request in API.Swift. If the date of the last value in the array is today, then it doesn't get a new word, otherwise, it calls the API again. */
     func APICaller() {
         let wordsQuery = PFQuery(className: "PreviousWords")
         wordsQuery.includeKey("user")
