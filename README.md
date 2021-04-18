@@ -28,7 +28,7 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 **Required Must-have Stories**
 
-* User can log in, sign up, and log out
+* User can log in, sign up, and log out - DONE 
 * User can view WoD and definition
 * User can show that they’ve used the word and gain points
 * User can see total number of points they’ve earned
