@@ -12,6 +12,7 @@
 		A4B17D71262A2F2900F54612 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D70262A2F2900F54612 /* API.swift */; };
 		A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */; };
 		A4B17D7B262CB10600F54612 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A4B17D7A262CB10600F54612 /* .gitignore */; };
+		A4EB8128262CFC7E00B09A0C /* SubmitContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB8127262CFC7E00B09A0C /* SubmitContextViewController.swift */; };
 		A4ECF292261FA680001AC4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECF291261FA680001AC4ED /* AppDelegate.swift */; };
 		A4ECF294261FA680001AC4ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECF293261FA680001AC4ED /* SceneDelegate.swift */; };
 		A4ECF296261FA680001AC4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECF295261FA680001AC4ED /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		A4B17D70262A2F2900F54612 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewController.swift; sourceTree = "<group>"; };
 		A4B17D7A262CB10600F54612 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A4EB8127262CFC7E00B09A0C /* SubmitContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitContextViewController.swift; sourceTree = "<group>"; };
 		A4ECF28E261FA680001AC4ED /* DictionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ECF291261FA680001AC4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ECF293261FA680001AC4ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				A4ECF2DC261FA70C001AC4ED /* PastWordsViewController.swift */,
 				A4ECF2E1261FA712001AC4ED /* ProfileViewController.swift */,
 				A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */,
+				A4EB8127262CFC7E00B09A0C /* SubmitContextViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4EB8128262CFC7E00B09A0C /* SubmitContextViewController.swift in Sources */,
 				A4ECF2D3261FA6FE001AC4ED /* SignUpViewController.swift in Sources */,
 				A4ECF296261FA680001AC4ED /* ViewController.swift in Sources */,
 				A4ECF292261FA680001AC4ED /* AppDelegate.swift in Sources */,
