@@ -39,7 +39,7 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 **Optional Nice-to-have Stories**
 
-- [ ] User can see list of previous words
+- [X ] User can see list of previous words
 
 
 ### 2. Screen Archetypes
