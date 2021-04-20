@@ -229,5 +229,3 @@ A mobile application to allow users to learn new words and expand their vocabula
 #### Build Progress
 Login, view WoD, view total points, use word
 <img src="https://media.giphy.com/media/m1VkzSmngRkrwZWIFQ/giphy.gif">
-
-
