@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0447868458B977CB0AC1C639 /* Pods_DictionDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845B65C7E77AE0F59E9C3C3C /* Pods_DictionDiary.framework */; };
 		2DC1ACB00560A196152590F3 /* Pods_DictionDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A1399FCB22561F5DD2658B /* Pods_DictionDiaryTests.framework */; };
+		A4B17D71262A2F2900F54612 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D70262A2F2900F54612 /* API.swift */; };
+		A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */; };
+		A4B17D7B262CB10600F54612 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A4B17D7A262CB10600F54612 /* .gitignore */; };
 		A4ECF292261FA680001AC4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECF291261FA680001AC4ED /* AppDelegate.swift */; };
 		A4ECF294261FA680001AC4ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECF293261FA680001AC4ED /* SceneDelegate.swift */; };
 		A4ECF296261FA680001AC4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ECF295261FA680001AC4ED /* ViewController.swift */; };
@@ -50,6 +53,9 @@
 		74A1399FCB22561F5DD2658B /* Pods_DictionDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictionDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845B65C7E77AE0F59E9C3C3C /* Pods_DictionDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictionDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D86237A49DE4589B1A0C9B /* Pods-DictionDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictionDiary.release.xcconfig"; path = "Target Support Files/Pods-DictionDiary/Pods-DictionDiary.release.xcconfig"; sourceTree = "<group>"; };
+		A4B17D70262A2F2900F54612 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewController.swift; sourceTree = "<group>"; };
+		A4B17D7A262CB10600F54612 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A4ECF28E261FA680001AC4ED /* DictionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ECF291261FA680001AC4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ECF293261FA680001AC4ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +119,6 @@
 				C589940538893E422C726333 /* Pods-DictionDiaryTests.debug.xcconfig */,
 				68243E81F0109416AC9BB9CF /* Pods-DictionDiaryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +165,8 @@
 				A4ECF29A261FA684001AC4ED /* Assets.xcassets */,
 				A4ECF29C261FA684001AC4ED /* LaunchScreen.storyboard */,
 				A4ECF29F261FA684001AC4ED /* Info.plist */,
+				A4B17D70262A2F2900F54612 /* API.swift */,
+				A4B17D7A262CB10600F54612 /* .gitignore */,
 			);
 			path = DictionDiary;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				A4ECF2D7261FA702001AC4ED /* HomeViewController.swift */,
 				A4ECF2DC261FA70C001AC4ED /* PastWordsViewController.swift */,
 				A4ECF2E1261FA712001AC4ED /* ProfileViewController.swift */,
+				A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B17D7B262CB10600F54612 /* .gitignore in Resources */,
 				A4ECF29E261FA684001AC4ED /* LaunchScreen.storyboard in Resources */,
 				A4ECF29B261FA684001AC4ED /* Assets.xcassets in Resources */,
 				A4ECF299261FA680001AC4ED /* Main.storyboard in Resources */,
@@ -437,10 +446,12 @@
 				A4ECF296261FA680001AC4ED /* ViewController.swift in Sources */,
 				A4ECF292261FA680001AC4ED /* AppDelegate.swift in Sources */,
 				A4ECF294261FA680001AC4ED /* SceneDelegate.swift in Sources */,
+				A4B17D71262A2F2900F54612 /* API.swift in Sources */,
 				A4ECF2CE261FA6F5001AC4ED /* LoginViewController.swift in Sources */,
 				A4ECF2D8261FA702001AC4ED /* HomeViewController.swift in Sources */,
 				A4ECF2E2261FA712001AC4ED /* ProfileViewController.swift in Sources */,
 				A4ECF2DD261FA70C001AC4ED /* PastWordsViewController.swift in Sources */,
+				A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */,
 				A4ECF2C9261FA6EC001AC4ED /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

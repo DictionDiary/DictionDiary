@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        WordsAPICaller.getRandomWordRequest()
     }
     
     @IBOutlet weak var usernameField: UITextField!
