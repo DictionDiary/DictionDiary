@@ -28,15 +28,18 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 **Required Must-have Stories**
 
-* User can log in, sign up, and log out - DONE 
-* User can view WoD and definition
-* User can show that they’ve used the word and gain points
-* User can see total number of points they’ve earned
+- [X] User can log in, sign up, and log out
+
+- [X] User can view WoD and definition
+
+- [X] User can show that they’ve used the word and gain points
+
+- [X] User can see total number of points they’ve earned
 
 
 **Optional Nice-to-have Stories**
 
-* User can see list of previous words
+- [ ] User can see list of previous words
 
 
 ### 2. Screen Archetypes
