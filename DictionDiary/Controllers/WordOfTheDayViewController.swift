@@ -33,10 +33,13 @@ class WordOfTheDayViewController: UIViewController {
                 print("hooray!")
                 //                        print(words)
                 self.previousWords = words!
+                let todaysDate = Date()
                 let currDateFormat = DateFormatter()
                 let otherDateFormat = DateFormatter()
                 currDateFormat.timeStyle = .none
                 otherDateFormat.timeStyle = .none
+                currDateFormat.dateStyle = .short
+                otherDateFormat.dateStyle = .short
                 if currDateFormat.string(from: Date()) == otherDateFormat.string(from: self.previousWords.last?["wordDate"] as! Date) {
                     print("no new word")
                 }
