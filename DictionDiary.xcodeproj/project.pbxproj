@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0447868458B977CB0AC1C639 /* Pods_DictionDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845B65C7E77AE0F59E9C3C3C /* Pods_DictionDiary.framework */; };
 		2DC1ACB00560A196152590F3 /* Pods_DictionDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A1399FCB22561F5DD2658B /* Pods_DictionDiaryTests.framework */; };
+		9A06EBC8262E97860013FAE7 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A06EBC7262E97860013FAE7 /* WordCell.swift */; };
 		A4B17D71262A2F2900F54612 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D70262A2F2900F54612 /* API.swift */; };
 		A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */; };
 		A4B17D7B262CB10600F54612 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A4B17D7A262CB10600F54612 /* .gitignore */; };
@@ -54,6 +55,7 @@
 		74A1399FCB22561F5DD2658B /* Pods_DictionDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictionDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845B65C7E77AE0F59E9C3C3C /* Pods_DictionDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictionDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D86237A49DE4589B1A0C9B /* Pods-DictionDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictionDiary.release.xcconfig"; path = "Target Support Files/Pods-DictionDiary/Pods-DictionDiary.release.xcconfig"; sourceTree = "<group>"; };
+		9A06EBC7262E97860013FAE7 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		A4B17D70262A2F2900F54612 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewController.swift; sourceTree = "<group>"; };
 		A4B17D7A262CB10600F54612 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				A4ECF291261FA680001AC4ED /* AppDelegate.swift */,
 				A4ECF293261FA680001AC4ED /* SceneDelegate.swift */,
 				A4ECF295261FA680001AC4ED /* ViewController.swift */,
+				9A06EBC7262E97860013FAE7 /* WordCell.swift */,
 				A4ECF297261FA680001AC4ED /* Main.storyboard */,
 				A4ECF29A261FA684001AC4ED /* Assets.xcassets */,
 				A4ECF29C261FA684001AC4ED /* LaunchScreen.storyboard */,
@@ -457,6 +460,7 @@
 				A4ECF2DD261FA70C001AC4ED /* PastWordsViewController.swift in Sources */,
 				A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */,
 				A4ECF2C9261FA6EC001AC4ED /* RegisterViewController.swift in Sources */,
+				9A06EBC8262E97860013FAE7 /* WordCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
