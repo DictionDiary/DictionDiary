@@ -27,17 +27,19 @@ class WordOfTheDayViewController: UIViewController {
     /** function that calls the HTTP request in API.Swift. If the date of the last value in the array is today, then it doesn't get a new word, otherwise, it calls the API again. */
     func APICaller() {
         let wordsQuery = PFQuery(className: "PreviousWords")
-        wordsQuery.includeKey("user")
         wordsQuery.limit = 20
         wordsQuery.findObjectsInBackground { (words,error) in
             if words != nil {
                 print("hooray!")
                 //                        print(words)
                 self.previousWords = words!
+                let todaysDate = Date()
                 let currDateFormat = DateFormatter()
                 let otherDateFormat = DateFormatter()
                 currDateFormat.timeStyle = .none
                 otherDateFormat.timeStyle = .none
+                currDateFormat.dateStyle = .short
+                otherDateFormat.dateStyle = .short
                 if currDateFormat.string(from: Date()) == otherDateFormat.string(from: self.previousWords.last?["wordDate"] as! Date) {
                     print("no new word")
                 }

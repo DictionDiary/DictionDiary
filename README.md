@@ -28,15 +28,18 @@ A mobile application to allow users to learn new words and expand their vocabula
 
 **Required Must-have Stories**
 
-* User can log in, sign up, and log out - DONE 
-* User can view WoD and definition
-* User can show that they’ve used the word and gain points
-* User can see total number of points they’ve earned
+- [X] User can log in, sign up, and log out
+
+- [X] User can view WoD and definition
+
+- [X] User can show that they’ve used the word and gain points
+
+- [X] User can see total number of points they’ve earned
 
 
 **Optional Nice-to-have Stories**
 
-* User can see list of previous words
+- [ ] User can see list of previous words
 
 
 ### 2. Screen Archetypes
@@ -93,8 +96,6 @@ A mobile application to allow users to learn new words and expand their vocabula
 | name  | string  | user's name  |
 | username  |  id | user's username  |
 | points   | number   | total points accumulated  |
-| profilePicture  |  file  |  user's profile picture  |
-| didLogin  | boolean  | checks if user logged in for the day, user gets one point for daily login |
 
 #### PreviousWords
 | Property   | Type   |  Description |
@@ -103,13 +104,6 @@ A mobile application to allow users to learn new words and expand their vocabula
 | dailyWord  | string  | dailyWord  |
 | definition  |  string | word definition |
 | dateCreated   | DateTime   | date the word was chosen  |
-
-#### UsedWords
-| Property   | Type   |  Description |
-|---|---|---|
-| wordId  | id   | daily word ID  |
-| user  | PFUser  | user  |
-| sentenceContext  |  string | sentence in which the word was used |
 
 
 ### Networking
