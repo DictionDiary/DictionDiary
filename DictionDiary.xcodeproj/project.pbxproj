@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0447868458B977CB0AC1C639 /* Pods_DictionDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845B65C7E77AE0F59E9C3C3C /* Pods_DictionDiary.framework */; };
 		2DC1ACB00560A196152590F3 /* Pods_DictionDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A1399FCB22561F5DD2658B /* Pods_DictionDiaryTests.framework */; };
+		4FF8A33E262F1AFF00E6774A /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8A33D262F1AFF00E6774A /* WordCell.swift */; };
 		A4B17D71262A2F2900F54612 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D70262A2F2900F54612 /* API.swift */; };
 		A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B17D75262B64BF00F54612 /* WordOfTheDayViewController.swift */; };
 		A4B17D7B262CB10600F54612 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A4B17D7A262CB10600F54612 /* .gitignore */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FF8A33D262F1AFF00E6774A /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		56E4E8B62D157C29631F34EA /* Pods_DictionDiary_DictionDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictionDiary_DictionDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4761E392B78491301CDBCB /* Pods-DictionDiary-DictionDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictionDiary-DictionDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-DictionDiary-DictionDiaryUITests/Pods-DictionDiary-DictionDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		68243E81F0109416AC9BB9CF /* Pods-DictionDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictionDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-DictionDiaryTests/Pods-DictionDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				A4ECF29F261FA684001AC4ED /* Info.plist */,
 				A4B17D70262A2F2900F54612 /* API.swift */,
 				A4B17D7A262CB10600F54612 /* .gitignore */,
+				4FF8A33D262F1AFF00E6774A /* WordCell.swift */,
 			);
 			path = DictionDiary;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				A4ECF2DD261FA70C001AC4ED /* PastWordsViewController.swift in Sources */,
 				A4B17D76262B64BF00F54612 /* WordOfTheDayViewController.swift in Sources */,
 				A4ECF2C9261FA6EC001AC4ED /* RegisterViewController.swift in Sources */,
+				4FF8A33E262F1AFF00E6774A /* WordCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N8BB2SYQQ;
 				INFOPLIST_FILE = DictionDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,6 +661,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N8BB2SYQQ;
 				INFOPLIST_FILE = DictionDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -676,7 +682,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N8BB2SYQQ;
 				INFOPLIST_FILE = DictionDiaryTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,7 +705,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N8BB2SYQQ;
 				INFOPLIST_FILE = DictionDiaryTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,6 +727,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N8BB2SYQQ;
 				INFOPLIST_FILE = DictionDiaryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -742,6 +749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9N8BB2SYQQ;
 				INFOPLIST_FILE = DictionDiaryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -13,12 +13,9 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-<<<<<<< HEAD
-    
-=======
     @IBOutlet weak var submitContextButton: UIButton!
     @IBOutlet weak var totalPointsLabel: UILabel!
->>>>>>> 4ba1102acfda143f106c7ffa78522f26be4245ea
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let todaysDate = Date()

@@ -7,10 +7,6 @@
 
 import UIKit
 import Parse
-<<<<<<< HEAD
-=======
-
->>>>>>> 4ba1102acfda143f106c7ffa78522f26be4245ea
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
