@@ -10,9 +10,15 @@ import Parse
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        WordsAPICaller.getRandomWordRequest()
+        loginButton.layer.shadowColor = UIColor.black.cgColor
+        loginButton.layer.shadowOpacity = 0.2
+        loginButton.layer.shadowOffset = .zero
+        loginButton.layer.shadowRadius = 20
+        loginButton.layer.cornerRadius = 30
+
     }
     
     @IBOutlet weak var usernameField: UITextField!

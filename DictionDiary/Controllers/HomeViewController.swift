@@ -13,14 +13,28 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-<<<<<<< HEAD
-    
-=======
     @IBOutlet weak var submitContextButton: UIButton!
     @IBOutlet weak var totalPointsLabel: UILabel!
->>>>>>> 4ba1102acfda143f106c7ffa78522f26be4245ea
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let todaysDate = Date()
+//        let formatter = DateFormatter()
+//        formatter.timeStyle = .none
+//        formatter.dateStyle = .long
+//        dateLabel.text = formatter.string(from: todaysDate)
+//        submitContextButton.layer.shadowColor = UIColor.black.cgColor
+//        submitContextButton.layer.shadowOpacity = 0.2
+//        submitContextButton.layer.shadowOffset = .zero
+//        submitContextButton.layer.shadowRadius = 20
+//        submitContextButton.layer.cornerRadius = 30
+//        let user = PFUser.current()
+//        var currPoints = user!["totalPoints"] as? Int ?? 0
+//        totalPointsLabel.text =  String(currPoints)
+
+        // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
         let todaysDate = Date()
         let formatter = DateFormatter()
         formatter.timeStyle = .none
@@ -34,9 +48,7 @@ class HomeViewController: UIViewController {
         let user = PFUser.current()
         var currPoints = user!["totalPoints"] as? Int ?? 0
         totalPointsLabel.text =  String(currPoints)
-
-        // Do any additional setup after loading the view.
-    }
+        }
     
 
     @IBAction func onLogoutButton(_ sender: Any) {
